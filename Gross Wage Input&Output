@@ -1,0 +1,6 @@
+print("Enter Wage: ")
+wage = int(input())
+print("Enter Hours: ")
+hours = int(input())
+pay = wage * hours
+print("Your pay is: $" + str(pay))
