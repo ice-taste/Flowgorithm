@@ -1,0 +1,18 @@
+def toFixed(value, digits):
+    return "%.*f" % (digits, value)
+
+
+# Declares variables
+print("Enter total meal price:")
+totalFood = float(input())
+
+# Gathers meal price input and calculates
+tip = totalFood * 0.15
+tax = totalFood * 0.07
+grandTotal = totalFood + tip + tax
+
+# Outputs all calculated prices within 2 decimal spots for currency
+print("Subtotal: $ " + toFixed(totalFood,2))
+print("Tip: $ " + toFixed(tip,2))
+print("Tax: $ " + toFixed(tax,2))
+print("Grand total: $" + toFixed(grandTotal,2))
